@@ -1,2 +1,0 @@
-# AleOS
-AleOS
