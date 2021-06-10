@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head style="background-color:dimgray;" style="color:white;">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: black;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: white;
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  background-color: darkred;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+</style>
+</head>
+<body style="background-color:dimgray;" style="color:white;">
+
+<div class="sidebar">
+  <a href="index.html">Cos'e' aleOS</a>
+  <a href="scarica.html ">Scarica aleOS</a>
+  <a class="active" href="beta.html">Prova una beta</a>
+  <a href="futuro.html">Cosa voglio aggiungere in futuro?</a>
+  <a href="bug.html">Bug trovati fino ad ora</a>
+  <a href="guida.html">E dopo averlo scaricato?</a>
+  <a href="contatti.html">Se ho un problema?</a>
+  <a  href="ringraziamenti.html">Ringraziamenti</a>
+  <a href="#">Download diretto all'ultima versione stabile</a>
+</div>
+
+<div class="content">
+    <h2  style="color:white; font-family:verdana;">Scarica una beta di aleOS</h2>
+    <p  style="color:red; font-family:verdana;">ATTENZIONE: Queste sono beta quindi hanno le ultime funzioni, anche se possono avere dei problemi, sono instabili e potrebbero distruggere dei tuoi dati per sbaglio.</p>
+    <p  style="color:white; font-family:verdana;">Cerchi una versione stabile? Premi il tasto apposito nella sidebar</p>
+
+    <h2  style="color:white; font-family:verdana;">Nessuna versione trovata. Cerca nelle beta se trovi qualcosa...</h2>
+</div>
+
+</body>
+</html>
